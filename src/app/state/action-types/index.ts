@@ -6,3 +6,10 @@ export enum ModalActionTypes {
 export enum UserLoginTypes{
   Login
 }
+
+export enum RandomWordTypes{
+  FetchRequest,
+  FetchSuccess,
+  FetchFailure
+  
+}

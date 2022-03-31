@@ -32,7 +32,7 @@ const ModalContainer: React.FunctionComponent = () => {
     onClose();
   };
   return (
-    <Modal onClose={closeHandler} isOpen={state.open} isCentered>
+    <Modal onClose={closeHandler} isOpen={state.open} isCentered closeOnOverlayClick={false} >
       <ModalOverlay />
       <ModalContent>
         <ModalBody>{state.body}</ModalBody>

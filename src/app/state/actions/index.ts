@@ -1,5 +1,6 @@
+import { RandomWord } from "../../../interfaces/randomword";
 import { User } from "../../../interfaces/user";
-import { ModalActionTypes, UserLoginTypes } from "../action-types";
+import { ModalActionTypes, RandomWordTypes, UserLoginTypes } from "../action-types";
 
 export type ModalState = {
   body: JSX.Element | null;
@@ -15,4 +16,9 @@ export interface UserLoginAction{
   payload: User;
 }
 
-export type Action = ModalAction | UserLoginAction;
+export interface RandomWordAction{
+  type:RandomWordTypes;
+  payload?:RandomWord 
+}
+
+export type Action = ModalAction | UserLoginAction|RandomWordAction;

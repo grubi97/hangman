@@ -1,6 +1,12 @@
+import axios from "axios";
 import { Dispatch } from "react";
+import { RandomWord } from "../../../interfaces/randomword";
 import { User } from "../../../interfaces/user";
-import { ModalActionTypes, UserLoginTypes } from "../action-types";
+import {
+  ModalActionTypes,
+  RandomWordTypes,
+  UserLoginTypes,
+} from "../action-types";
 import { Action, ModalState } from "../actions";
 
 export function showModal(payload: ModalState) {
@@ -21,7 +27,7 @@ export function hideModal(payload: ModalState) {
   };
 }
 
-export function login(payload:User) {
+export function login(payload: User) {
   return (dispatch: Dispatch<Action>) => {
     dispatch({
       type: UserLoginTypes.Login,
@@ -29,3 +35,5 @@ export function login(payload:User) {
     });
   };
 }
+
+

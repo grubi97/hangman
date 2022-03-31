@@ -7,21 +7,21 @@ import step5 from "../images/5.jpg";
 import step6 from "../images/6.jpg";
 
 const programming_languages = [
-  "pyt,hon",
-  "java,script",
-  "mon,godb",
-  "jso,n",
-  "jav,a",
-  "htm,l",
-  "cs,s",
-  "c",
-  "cs,harp",
-  "gol,ang",
-  "kot,lin",
-  "p,hp",
-  "s,ql",
-  "r,uby",
-  "fo,rtran",
+  "Pyt,hon",
+  "Java,script",
+  "Mon,godb",
+  "Jso,n",
+  "Jav,a",
+  "Htm,l",
+  "Cs,s",
+  "C",
+  "Cs,harp",
+  "Gol,ang",
+  "Kot,lin",
+  "P,hp",
+  "S,ql",
+  "R,uby",
+  "Fo,rtran",
 ];
 
 function randomWord() {
@@ -33,7 +33,7 @@ function randomWord() {
 function hideWord(word: String): String[] {
   const wordArray = word.split("");
   for (var i in wordArray) {
-    if (wordArray[i].match(/[a-z]/i)) wordArray[i] = "_ ";
+    if (wordArray[i].match(/[a-z]/i)) wordArray[i] = "_";
   }
 
   return wordArray;

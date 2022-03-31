@@ -1,9 +1,9 @@
 import { User } from "../../../interfaces/user";
-import { ModalActionTypes, UserLoginTypes } from "../action-types";
+import { UserLoginTypes } from "../action-types";
 import { Action } from "../actions";
 
 const initialState: User = {
-  username: null,
+  username: "",
 };
 
 function userReducer(state = initialState, action: Action): User {
